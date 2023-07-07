@@ -1,0 +1,280 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 1rem;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Variables */
+:root {
+  --text-color: #FFFFFF;
+  --first-color: #7A86FE;
+  --second-color: #FFD754;
+  --button-color: #1d225d;
+  --hover-color: #2e2e2e;
+  --other-color1:#83E2CC;
+  --other-color2:#F6BAC2;
+  --other-color3:#5CDE5A;
+}
+
+/* ============================ INIZIO DELLA NAVBAR ============================ */
+.navbar {
+  background-color: #7A86FE;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: fixed;
+  z-index: 999;
+  box-shadow: 0px 2px 4px rgba(122, 134, 254, 0.5); /* Valori di esempio per l'ombra, puoi regolare i valori secondo le tue preferenze */
+}
+
+.logo {
+  color: #ffffff;
+  display: flex;
+  align-items: flex-start;
+  font-size: 20px;
+  padding-left: 50px;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.logo span {
+  color: #FFD754;
+}
+
+.nav_links {
+  font-size: 20px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+  margin: 0;
+  padding: 20px;
+  font-weight: 400;
+}
+
+.nav_login {
+  font-size: 20px;
+  display: flex;
+  gap: 4rem;
+  align-items: flex-end;
+  font-weight: 600;
+  padding-right: 50px;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar li a:hover {
+  color: #FFD754;
+  font-weight: 600;
+}
+
+/* ============================ FINE DELLA NAVBAR ============================ */
+/* ============================ INIZIO SEZIONE 1 ============================ */
+.login_container {
+  position: relative;
+  min-height: 100vh;
+  display: grid;
+  background-color: #7A86FE;
+  border-bottom-left-radius: 600px;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.login_title h1 {
+  font-size: 5rem;
+  color: #FFFFFF;
+  padding-left: 110px;
+  padding-top: 9rem;
+}
+
+.login_title h1 span {
+  color: #FFD754;
+}
+
+.login_img img {
+  width: 50rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+.login_img {
+  position: relative;
+  margin-left: 6rem;
+  margin-bottom: 7.5rem;
+}
+
+/* ============================ FINE SEZIONE 1 ============================ */
+/* ============================ INIZIO SEZIONE LOGIN ============================ */
+.login_section {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.form-container {
+  position: absolute;
+  top: 27%;
+  left: 63%;
+  width: 450px;
+  height: 650px;
+  border-radius: 0.75rem;
+  background-color: #5460D7;
+  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+  padding-top: 6rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  color: rgb(243, 244, 246);
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.form {
+  margin-top: 1.5rem;
+}
+
+.input-group {
+  margin-top: 2rem;
+  font-size: 0.875rem;
+  line-height: 1rem;
+}
+
+.input-group label {
+  display: block;
+  color: rgb(246, 246, 246);
+  margin-bottom: 4px;
+}
+
+.input-group input {
+  width: 100%;
+  border-radius: 0.375rem;
+  outline: 0;
+  background-color: rgb(255, 255, 255);
+  padding: 0.75rem 1rem;
+  color: #1d225d;
+}
+
+.input-group input:focus {
+  border-color: #7A86FE;
+  background-color: #FFD754;
+}
+
+.forgot {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: rgb(156, 163, 175);
+  margin: 8px 0 14px 0;
+}
+
+.forgot a, .signup a {
+  color: rgb(243, 244, 246);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.forgot a:hover, .signup a:hover {
+  font-weight: 700;
+}
+
+.sign {
+  display: block;
+  width: 100%;
+  background-color: #1d225d;
+  padding: 0.75rem;
+  text-align: center;
+  color: #FFFFFF;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  line-height: 1.2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.sign:hover {
+  font-weight: 600;
+  box-shadow: 7px 5px 56px -14px #1d225d;
+}
+
+.sign:active {
+  transform: scale(0.97);
+  box-shadow: 7px 5px 56px -10px #1d225d;
+}
+
+.social-message {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.line {
+  height: 1px;
+  flex: 1 1 0%;
+  background-color: #FFFFFF;
+}
+
+.social-message .message {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #FFFFFF;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons .icon {
+  border-radius: 0.125rem;
+  padding: 0.75rem;
+  border: none;
+  background-color: transparent;
+  margin-left: 8px;
+}
+
+.social-icons .icon:hover {
+  background: #1d225d;
+  border-radius: 0.3rem;
+  transition: 0.3s all linear;
+}
+
+.social-icons .icon svg {
+  height: 1.25rem;
+  width: 1.25rem;
+  fill: #fff;
+}
+
+.signup {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: #FFFFFF;
+}
+
+/* ============================ FINE SEZIONE LOGIN ============================ *//*# sourceMappingURL=login.component.css.map */

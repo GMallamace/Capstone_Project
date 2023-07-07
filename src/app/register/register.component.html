@@ -1,0 +1,72 @@
+ <!-- Box Icons -->
+ <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+ <!-- ICONSCOUT CDN -->
+ <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+ 
+
+
+<!--PAGINA POST CARICAMENTO-->
+    <body>
+        <!-- Header -->
+        <header>
+            <div class="navbar">
+                   <!-- Logo -->
+                   <a [routerLink]='["/home"]' class="logo">Building Your <span>Future</span>.
+                    </a>
+                <!-- Nav List -->
+                <ul class="nav_links">
+                    <li><a [routerLink]='["/courses"]'>Courses</a></li>
+                    <li><a [routerLink]='["/tutorial"]'>Tutorial</a></li>
+                    <li><a [routerLink]='["/teachers"]'>Teachers</a></li>
+                    <li><a [routerLink]='["/about"]'>About</a></li>
+                </ul>
+                <ul class="nav_login">
+                  <li><a [routerLink]='["/login"]'>Login</a></li>
+                  <li><a>Register</a></li>
+                </ul>
+            </div>
+        </header>
+        <!-- Home Section Start -->
+        <section class="login_container" id="login">
+            <div class="login_title">
+                <h1>Building <br>Your <span>Future</span>.</h1>
+            </div>
+            <!-- Home Image -->
+            <div class="login_img">
+                <img src="assets/img/studenti.jpg">
+            </div>
+
+
+            <div class="login_section">
+                <div class="form-container">
+                    <p class="title">Register</p>
+                    <form class="form">
+                        <div class="input-group">
+                            <label for="username">Nome completo</label>
+                            <input type="text" name="username" id="username" placeholder="">
+                        </div>
+                        <div class="input-group">
+                            <label for="email">E-mail</label>
+                            <input type="text" name="email" id="email" placeholder="">
+                        </div>
+                        <div class="input-group">
+                            <label for="password">Password</label>
+                            <input type="password" name="psw" id="psw" placeholder="">
+                        </div>
+
+                        <div class="input-group">
+                            <label for="password">Ripeti Password</label>
+                            <input type="password" name="psw" id="psw" placeholder="">
+                        </div>
+
+                        <div class="button-group">
+                             <button class="sign2">Docente</button>
+                             <button class="sign2">Studente</button>  
+                        </div>
+
+                        <button class="sign">REGISTRATI</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- ==================== FINE PARTE 1 ====================-->

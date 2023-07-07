@@ -1,0 +1,268 @@
+ <!-- Box Icons -->
+ <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+ <!-- ICONSCOUT CDN -->
+ <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+ 
+ <!-- CARICAMENTO-->
+ <div *ngIf="isLoading" class="loader">
+    <div class="square" id="sq1"></div>
+    <div class="square" id="sq2"></div>
+    <div class="square" id="sq3"></div>
+    <div class="square" id="sq4"></div>
+    <div class="square" id="sq5"></div>
+    <div class="square" id="sq6"></div>
+    <div class="square" id="sq7"></div>
+    <div class="square" id="sq8"></div>
+    <div class="square" id="sq9"></div>
+</div>
+
+
+<!--PAGINA POST CARICAMENTO-->
+<div *ngIf="!isLoading">
+    <body>
+        <!-- Header -->
+        <header>
+            <div class="navbar">
+                   <!-- Logo -->
+                   <a [routerLink]='["/home"]' class="logo">
+                    Building Your <span> Future</span>.
+                    </a>
+                <!-- Nav List -->
+                <ul class="nav_links">
+                    <li><a [routerLink]='["/courses"]'>Courses</a></li>
+                    <li><a [routerLink]='["/tutorial"]'>Tutorial</a></li>
+                    <li><a [routerLink]='["/teachers"]'>Teachers</a></li>
+                    <li><a [routerLink]='["/about"]'>About</a></li>
+                </ul>
+                <ul class="nav_login">
+                  <li><a [routerLink]='["/login"]'>Login</a></li>
+                  <li><a [routerLink]='["/register"]'>Register</a></li>
+                </ul>
+            </div>
+        </header>
+        <!-- Home Section Start -->
+        <section class="home container" id="home">
+            <div class="home-text">
+                <h1>Porta l'<span>apprendimento</span> ad un nuovo livello!</h1>
+            </div>
+            <!-- Home Image -->
+            <div class="home-img">
+                <img src="assets/img/ragazza.webp">
+            </div>
+        </section>
+        <!-- ==================== FINE PARTE 1 ====================-->
+
+        <!-- ==================== INIZIO PARTE 2 ====================-->
+        <section class="categories">
+            <div class="container categories__container">
+              <div class="categories__left">
+                <h1>Scopri i metodi grazie ai quale il <span>94%</span> dei nostri studenti riesce a <span>recuperare</span> tutte le lacune :)</h1>
+               
+                <button id="bottone1" [routerLink]='["/about"]'>Scopri di più</button>
+              </div>
+      
+              <div class="categories__right">
+                <article class="category">
+                  <span class="category__icon">
+                    <i class="uil uil-abacus"></i>
+                  </span>
+                  <h5>Esercitazioni</h5>
+                  <p>Creiamo delle esercitazioni facilitate utili ad una crescita graduale e costante dell'apprendimento dello studente.</p>
+                </article>
+      
+                <article class="category">
+                  <span class="category__icon">
+                    <i class="uil uil-bell-school"></i>
+                  </span>
+                  <h5>Tempo libero</h5>
+                  <p>Quando stabiliamo un percorso teniamo conto dei vostri impegni e cerchiamo di modellare attorno un piano di crescita personalizzato.</p>
+                </article>
+      
+                <article class="category">
+                  <span class="category__icon">
+                    <i class="uil uil-accessible-icon-alt"></i>
+                  </span>
+                  <h5>Accessibile</h5>
+                  <p>Ogni studente è unico, è per noi importante assegnarti il Tutor adatto alle tue esigenze.</p>
+                </article>
+      
+                <article class="category">
+                  <span class="category__icon">
+                    <i class="uil uil-band-aid"></i>
+                  </span>
+                  <h5>Lacune</h5>
+                  <p>Cerchiamo di colmare le lacune dello studente intervenendo sugli argomenti nei quali è più carente.</p>
+                </article>
+      
+                <article class="category">
+                  <span class="category__icon">
+                    <i class="uil uil-bag-alt"></i>
+                  </span>
+                  <h5>Tutor</h5>
+                  <p>La scelta dei Tutor è molto importante per la nostra azienda, scegliamo con cura i docenti che vi seguiranno.</p>
+                </article>
+      
+                <article class="category">
+                  <span class="category__icon">
+                    <i class="uil uil-puzzle-piece"></i>
+                  </span>
+                  <h5>Tutorial</h5>
+                  <p>All'interno del nostro portale sono presenti dei video di approfondimento per implementare le nozioni apprese.</p>
+                </article>
+              </div>
+            </div>
+          </section>
+          <!--====================== END OF CATEGORIES =====================-->
+
+        <!-- ==================== FINE PARTE 2 ====================-->
+
+         <!-- ==================== INIZIO PARTE 3 ====================-->
+         <section class="container_3">
+            <div class="container_text">
+               <h1>Diventa un nostro <span>Docente</span></h1>
+               <p>E' importante per la nostra azienda collaborare con docenti preparati e con una forte empatia, desiderosi di aiutare gli studenti a seguire un percorso di crescita. Pensi di essere all'altezza? <br> <span>Candidati subito!</span></p>
+               <button id="bottone1" [routerLink]='["/teachers"]'>Scopri di più</button>
+            </div>
+            <div class="container_img">
+               <img src="assets/img/ragazzopc.webp" alt="">
+            </div>
+        </section>
+     <!-- ==================== FINE PARTE 3 ====================-->
+
+<!-- ==================== DOMANDE FREQUENTI PARTE 4 ====================-->
+
+<section class="faqs">
+  <h2>Domande frequenti</h2>
+  <div class="container faqs__container">
+     <!--Container 1-->
+      <article class="faq">
+          <div class="faq__icon"><i class="uil uil-plus"></i></div>
+          <div class="question__answer">
+              <h4>How do I know the right courses for me?</h4>
+              <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium quis qui similique quidem at voluptatem ex. Est dolorum minima dolor aut ut, accusantium vitae architecto aliquid nostrum numquam quibusdam.
+              </p>
+          </div>
+      </article>
+    <!--FINE Container 1-->
+      <!--Container 1-->
+      <article class="faq">
+        <div class="faq__icon"><i class="uil uil-plus"></i></div>
+        <div class="question__answer">
+            <h4>How do I know the right courses for me?</h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium quis qui similique quidem at voluptatem ex. Est dolorum minima dolor aut ut, accusantium vitae architecto aliquid nostrum numquam quibusdam.
+            </p>
+        </div>
+    </article>
+  <!--FINE Container 1-->
+    <!--Container 1-->
+    <article class="faq">
+      <div class="faq__icon"><i class="uil uil-plus"></i></div>
+      <div class="question__answer">
+          <h4>How do I know the right courses for me?</h4>
+          <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium quis qui similique quidem at voluptatem ex. Est dolorum minima dolor aut ut, accusantium vitae architecto aliquid nostrum numquam quibusdam.
+          </p>
+      </div>
+  </article>
+<!--FINE Container 1-->
+  <!--Container 1-->
+  <article class="faq">
+    <div class="faq__icon"><i class="uil uil-plus"></i></div>
+    <div class="question__answer">
+        <h4>How do I know the right courses for me?</h4>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium quis qui similique quidem at voluptatem ex. Est dolorum minima dolor aut ut, accusantium vitae architecto aliquid nostrum numquam quibusdam.
+        </p>
+    </div>
+</article>
+<!--FINE Container 1-->
+  <!--Container 1-->
+  <article class="faq">
+    <div class="faq__icon"><i class="uil uil-plus"></i></div>
+    <div class="question__answer">
+        <h4>How do I know the right courses for me?</h4>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium quis qui similique quidem at voluptatem ex. Est dolorum minima dolor aut ut, accusantium vitae architecto aliquid nostrum numquam quibusdam.
+        </p>
+    </div>
+</article>
+<!--FINE Container 1-->
+  <!--Container 1-->
+  <article class="faq">
+    <div class="faq__icon"><i class="uil uil-plus"></i></div>
+    <div class="question__answer">
+        <h4>How do I know the right courses for me?</h4>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium quis qui similique quidem at voluptatem ex. Est dolorum minima dolor aut ut, accusantium vitae architecto aliquid nostrum numquam quibusdam.
+        </p>
+    </div>
+</article>
+  </div>
+</section>    
+<!-- ==================== FINE DOMANDE FREQUENTI PARTE 4 ====================-->
+
+<!-- ==================== INIZIO PARTE 5 FAI DOMANDE ====================-->
+
+
+
+<!-- ==================== FINE PARTE 5 ====================-->
+
+<!-- ==================== INIZIO SCARICA APP PARTE 6 ====================-->
+<section class="container_6">
+  <div class="container_text">
+     <h1>Scarica la nostra App</h1>
+     <p>Scarica la nostra App, in questo modo potrai portarci sempre con noi, potrai seguire i nostri tutorial e rimanere aggiornato ovunque e da qualunque dispositivo.</p>
+     <button id="bottone1"><i class="bx bxl-play-store"></i>Google Play</button>
+     <button id="bottone1"><i class="bx bxl-apple"></i>Apple Store</button>
+  </div>
+  <div class="container_cell">
+     <img src="assets/img/cellulari.png" alt="">
+  </div>
+</section>
+
+
+<!-- ==================== FINE SCARICA APP PARTE 6 ====================-->
+
+<!-- ==================== FOOTER e NOME ====================-->
+   <!-- Footer -->
+   <section class="footer container">
+    <div class="footer-box">
+        <h3>The Company</h3>
+        <a href="#">About Us</a>
+        <a href="#">Help</a>
+        <a href="#">Privacy Policy</a>
+    </div>
+    <div class="footer-box">
+        <h3>Popular Categories</h3>
+        <a [routerLink]='["/courses"]'>Courses</a>
+        <a [routerLink]='["/tutorial"]'>Tutorial</a>
+        <a [routerLink]='["/teachers"]'>Teachers</a>
+        <a [routerLink]='["/about"]'>About</a>
+    </div>
+    <div class="footer-box">
+        <h3>More Information</h3>
+        <a [routerLink]='["/login"]'>Login</a>
+        <a [routerLink]='["/register"]'>Register</a>
+        <a href="#">Contact Us</a>
+    </div>
+    <div class="footer-box">
+        <h3>Social</h3>
+       <div class="social">
+           <a href="#"><i class='bx bxl-facebook' ></i></a>
+           <a href="#"><i class='bx bxl-twitter' ></i></a>
+           <a href="#"><i class='bx bxl-instagram' ></i></a>
+       </div>
+    </div>
+    <!-- Scroll Top -->
+    <a href="#home" class="scroll-top"><i class='bx bx-up-arrow-alt' ></i></a>
+</section>
+
+        <!-- Copyright -->
+        <div class="copyright">
+            <p>&#169;Mixed By <span>Guido Mallamace</span></p>
+        </div>
+<!-- ==================== FINE FOOTER e NOME ====================-->
+</body>
+</div>
