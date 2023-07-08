@@ -43,28 +43,28 @@
                     <form class="form">
                         <div class="input-group">
                             <label for="username">Nome completo</label>
-                            <input type="text" name="username" id="username" placeholder="">
+                            <input #username="ngModel" [(ngModel)]="data.username" type="text" name="username" id="username" placeholder="">
                         </div>
                         <div class="input-group">
                             <label for="email">E-mail</label>
-                            <input type="text" name="email" id="email" placeholder="">
+                            <input #email="ngModel" [(ngModel)]="data.email" type="text" name="email" id="email" placeholder="">
                         </div>
                         <div class="input-group">
                             <label for="password">Password</label>
-                            <input type="password" name="psw" id="psw" placeholder="">
+                            <input #password="ngModel" [(ngModel)]="data.password" type="password" name="psw" id="psw" placeholder="">
                         </div>
 
                         <div class="input-group">
                             <label for="password">Ripeti Password</label>
-                            <input type="password" name="psw" id="psw" placeholder="">
+                            <input type="password" name="psw" id="ripetipassword" placeholder="">
                         </div>
 
                         <div class="button-group">
-                             <button class="sign2">Docente</button>
-                             <button class="sign2">Studente</button>  
+                             <button type="button" class="sign2">Docente</button>
+                             <button type="button" class="sign2">Studente</button>  
                         </div>
 
-                        <button class="sign">REGISTRATI</button>
+                        <button class="sign" (click)="register()">REGISTRATI</button>
                     </form>
                 </div>
             </div>

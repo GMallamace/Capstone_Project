@@ -40,19 +40,19 @@
             <div class="login_section">
                 <div class="form-container">
                     <p class="title">Login</p>
-                    <form class="form">
+                    <form class="form" #f="ngForm">
                         <div class="input-group">
                             <label for="username">E-mail</label>
-                            <input type="text" name="username" id="username" placeholder="">
+                            <input #email="ngModel" [(ngModel)]="data.email" type ="text" name="username" id="username" placeholder="">
                         </div>
                         <div class="input-group">
                             <label for="password">Password</label>
-                            <input type="password" name="password" id="password" placeholder="">
+                            <input #password="ngModel" [(ngModel)]="data.password" type="password" name="password" id="password" placeholder="">
                             <div class="forgot">
                                 <a rel="noopener noreferrer" href="#">Forgot Password ?</a>
                             </div>
                         </div>
-                        <button class="sign">ACCEDI</button>
+                        <button class="sign" (click)="login()">ACCEDI</button>
                     </form>
                     <div class="social-message">
                         <div class="line"></div>

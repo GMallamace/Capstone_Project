@@ -1,7 +1,25 @@
 {
-    "courses": [
-      { "id": 1, "title": "Corso 1" },
-      { "id": 2, "title": "Corso 2" },
-      { "id": 3, "title": "Corso 3" }
-    ]
-  }
+  "courses": [
+    {
+      "id": 1,
+      "title": "Corso 1"
+    },
+    {
+      "id": 2,
+      "title": "Corso 2"
+    },
+    {
+      "id": 3,
+      "title": "Corso 3"
+    }
+  ],
+  "users": [
+    {
+      "email": "Bettercallsaul@gmail.com",
+      "password": "$2a$10$vBbg6vWKFQ7PrV2L2louVexQ/iNi4GTCCO03ohFXE8qEr.ai9FSI2",
+      "username": "Saul Goodman",
+      "isTeacher": false,
+      "id": 1
+    }
+  ]
+}
