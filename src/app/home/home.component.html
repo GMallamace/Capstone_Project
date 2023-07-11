@@ -24,8 +24,8 @@
         <header>
             <div class="navbar">
                    <!-- Logo -->
-                   <a [routerLink]='["/home"]' class="logo">
-                    Building Your <span> Future</span>.
+                   <a [routerLink]='["/home"]' >
+                    Building Your <span class="ms-3">Future</span>.
                     </a>
                 <!-- Nav List -->
                 <ul class="nav_links">
@@ -135,7 +135,7 @@
   <h2>Domande frequenti</h2>
   <div class="container faqs__container">
      <!--Container 1-->
-      <article class="faq">
+      <article (click)="apri($event)" class="faq">
           <div class="faq__icon"><i class="uil uil-plus"></i></div>
           <div class="question__answer">
               <h4>Che scrivo?</h4>
@@ -146,7 +146,7 @@
       </article>
     <!--FINE Container 1-->
       <!--Container 1-->
-      <article class="faq">
+      <article (click)="apri($event)" class="faq">
         <div class="faq__icon"><i class="uil uil-plus"></i></div>
         <div class="question__answer">
             <h4>How do I know the right courses for me?</h4>
@@ -157,7 +157,7 @@
     </article>
   <!--FINE Container 1-->
     <!--Container 1-->
-    <article class="faq">
+    <article (click)="apri($event)" class="faq">
       <div class="faq__icon"><i class="uil uil-plus"></i></div>
       <div class="question__answer">
           <h4>How do I know the right courses for me?</h4>
@@ -168,7 +168,7 @@
   </article>
 <!--FINE Container 1-->
   <!--Container 1-->
-  <article class="faq">
+  <article (click)="apri($event)" class="faq">
     <div class="faq__icon"><i class="uil uil-plus"></i></div>
     <div class="question__answer">
         <h4>How do I know the right courses for me?</h4>
@@ -179,7 +179,7 @@
 </article>
 <!--FINE Container 1-->
   <!--Container 1-->
-  <article class="faq">
+  <article (click)="apri($event)" class="faq">
     <div class="faq__icon"><i class="uil uil-plus"></i></div>
     <div class="question__answer">
         <h4>How do I know the right courses for me?</h4>
@@ -190,7 +190,7 @@
 </article>
 <!--FINE Container 1-->
   <!--Container 1-->
-  <article class="faq">
+  <article (click)="apri($event)" class="faq">
     <div class="faq__icon"><i class="uil uil-plus"></i></div>
     <div class="question__answer">
         <h4>How do I know the right courses for me?</h4>

@@ -20,6 +20,13 @@
       "username": "Saul Goodman",
       "isTeacher": false,
       "id": 1
+    },
+    {
+      "email": "mariorossi@gmail.com",
+      "password": "$2a$10$26usKOCfCrObGTXxNvqVxe6X85/AtdE/GhOmv3y2m5Aj6KDkErTEO",
+      "username": "Mario Rossi",
+      "isTeacher": false,
+      "id": 2
     }
   ]
 }
