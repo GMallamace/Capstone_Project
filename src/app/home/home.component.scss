@@ -120,6 +120,7 @@
   position: relative;
   margin-bottom: -88px;
   margin-left: 6rem;
+  z-index: 998; 
 }
 
 /* ============================ FINE SEZIONE 1 ============================ */
@@ -283,6 +284,9 @@
   transform: scale(0.97);
   box-shadow: 7px 5px 56px -10px #1d225d;
 }
+
+
+
 /* ============================ FINE SEZIONE 3, diventa docente ============================ */
 
 
@@ -434,6 +438,29 @@ box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
 }
 
 /* ==================================== FINE SEZIONE 6 SCARICA APP ====================================  */
+
+
+/* ==================================== INIZIO RETTANGOLI ====================================  */
+.rettangolo1{
+  position: absolute;
+  width: 8rem;
+  height: 12rem;
+  top: 15%;
+  left: 69%;
+  background-color: #FFD754;
+  border-radius: 10px;
+}
+
+.rettangolo2{
+  position: absolute;
+  width: 4rem;
+  height: 6rem;
+  top: 10%;
+  left: 78%;
+  background-color: #FFD754;
+  border-radius: 5px;
+}
+
 
 /* ==================================== FOOTER ====================================  */
 .footer {
