@@ -8,8 +8,20 @@ import { AuthService } from '../Services/auth.service';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
+  isLogged: boolean = false;
  constructor(private svc: AuthService){
  }
+
+ ngOnInit() {
+  this.checkLog()
+ }
+
+ checkLog() {
+  let user = localStorage.getItem('user');
+  if (user) {
+  this.isLogged = true;
+  }
+  }
 
   data: ILoginData= {
     email:'',

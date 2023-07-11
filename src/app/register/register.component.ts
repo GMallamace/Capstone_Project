@@ -9,7 +9,20 @@ import { tap } from 'rxjs';
   styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent {
+  isLogged: boolean = false;
   constructor(private svc: AuthService){
+  }
+
+
+ ngOnInit() {
+  this.checkLog()
+ }
+
+ checkLog() {
+  let user = localStorage.getItem('user');
+  if (user) {
+  this.isLogged = true;
+  }
   }
 
   data: IRegisterData = { username: '', email: '', password: '', isTeacher: false }

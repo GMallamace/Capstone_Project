@@ -15,7 +15,7 @@
                     </a>
                 <!-- Nav List -->
                 <ul class="nav_links">
-                    <li><a [routerLink]='["/courses"]'>Courses</a></li>
+                    <li *ngIf="isLogged"><a [routerLink]='["/courses"]'>Courses</a></li>
                     <li><a [routerLink]='["/tutorial"]'>Tutorial</a></li>
                     <li><a [routerLink]='["/about"]'>About</a></li>
                     <li><a [routerLink]='["/teachers"]'>Contact Us</a></li>
@@ -59,10 +59,11 @@
                             <input type="password" name="psw" id="ripetipassword" placeholder="">
                         </div>
 
-                        <div class="button-group">
-                             <button type="button" class="sign2">Docente</button>
-                             <button type="button" class="sign2">Studente</button>  
-                        </div>
+                        <input #isTeacher="ngModel" [(ngModel)]="data.isTeacher" type="radio" name="opzione" id="opzione1" value=false>
+                        <label for="opzione1">Studente</label>
+                        
+                        <input #isTeacher="ngModel" [(ngModel)]="data.isTeacher" type="radio" name="opzione" id="opzione2" value=true>
+                        <label for="opzione2">Docente</label>
 
                         <button class="sign" (click)="register()">REGISTRATI</button>
                     </form>

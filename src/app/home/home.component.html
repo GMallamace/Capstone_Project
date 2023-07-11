@@ -29,7 +29,7 @@
                     </a>
                 <!-- Nav List -->
                 <ul class="nav_links">
-                  <li><a [routerLink]='["/courses"]'>Courses</a></li>
+                  <li *ngIf="isLogged"><a [routerLink]='["/courses"]'>Courses</a></li>
                   <li><a [routerLink]='["/tutorial"]'>Tutorial</a></li>
                   <li><a [routerLink]='["/about"]'>About</a></li>
                   <li><a [routerLink]='["/teachers"]'>Contact Us</a></li>

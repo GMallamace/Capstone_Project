@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./courses.component.scss']
 })
 export class CoursesComponent {
+  isLogged: boolean = false;
 
+  ngOnInit() {
+   this.checkLog()
+  }
+ 
+  checkLog() {
+   let user = localStorage.getItem('user');
+   if (user) {
+   this.isLogged = true;
+   }
+   }
+ 
 }

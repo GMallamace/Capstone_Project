@@ -27,6 +27,34 @@
       "username": "Mario Rossi",
       "isTeacher": false,
       "id": 2
+    },
+    {
+      "email": "pino@gmail.com",
+      "password": "$2a$10$rja5yj5h3Yp4LfHM/aFsyePRSUeXxYQRXTY4uzMQNXFbOJeuXFsQK",
+      "username": "Pino Padano",
+      "isTeacher": "false",
+      "id": 3
+    },
+    {
+      "email": "mario@gmail.com",
+      "password": "$2a$10$0.CAtKzvMGClz.wmhhTRH.c4C5MpxiMlw4qT8xopSa0RLKFW/SUbS",
+      "username": "Mario Rossi",
+      "isTeacher": "true",
+      "id": 4
+    },
+    {
+      "email": "sasa@gmail.com",
+      "password": "$2a$10$2WhcNx04CZ7p/Ah/WeYhs.yuHtLM89R./P9VLWE4y98I3Zy3EGk6q",
+      "username": "platab platab",
+      "isTeacher": "false",
+      "id": 5
+    },
+    {
+      "email": "guidomallamace97@gmail.com",
+      "password": "$2a$10$BnsTZk60DTr73KCpNDIkIOX2Ji24GvBBFdePGjwbtl0PLJuPrlAEm",
+      "username": "Guido Mallamace",
+      "isTeacher": "true",
+      "id": 6
     }
   ]
 }
