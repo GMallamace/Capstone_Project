@@ -35,22 +35,21 @@
     <div class="login_section">
         <div class="form-container">
             <p class="title">Hai qualche dubbio? Contattaci subito!</p>
-            <form class="form">
+            <form (ngSubmit)="sendMessage()">
                 <div class="input-group">
                     <label for="username">Nome completo</label>
-                    <input  type="text" name="username" id="username" placeholder="">
+                    <input type="text" [(ngModel)]="username" name="username" id="username" placeholder="" required>
                 </div>
                 <div class="input-group">
                     <label for="email">E-mail</label>
-                    <input  type="text" name="email" id="email" placeholder="">
-                </div>
+                    <input type="email" [(ngModel)]="email" name="email" id="email" placeholder="" required>                </div>
 
                 <div class="input-group">
                     <label for="textarea">Lascia un messaggio</label>
-                  <textarea placeholder=""></textarea>
+                    <textarea [(ngModel)]="messageContent" name="messageContent"></textarea>
                 </div>
 
-                <button class="sign">Invia Messaggio</button>
+                <button class="sign" (click)="sendMessage()">Invia Messaggio</button>
             </form>
         </div>
     </div>

@@ -186,3 +186,53 @@
   .copyright :hover{
     font-weight: 600;
   }
+
+
+
+
+
+
+
+  /* Body */
+body {
+  padding: 5rem;
+  color: var(--text-color);
+  background-color:var(--bg-color);
+}
+  
+button.custom-btn {
+  background-color: var(--bg-color);
+}
+
+button.custom-btn:hover {
+  background-color: var(--text-color2);
+}
+
+/* Carosellooo */
+.ms-4.mb-0.mb-lg-3 {
+  padding-top: 25px;
+}
+  
+.carousel-inner {
+ padding-left: 20px;
+ padding-right: 20px;
+}
+  
+main #heading .svg-container {
+  padding: 5px 10px;
+  border: 1px solid var(--text-color);
+  cursor: pointer;
+}
+
+main select.form-select {
+  width: -moz-max-content;
+  width: max-content;
+}
+
+main ul.dropdown-menu {
+  background-color:var(--bg-color);
+}
+main ul.dropdown-menu li a {
+  color: var(--text-color);
+}
+  
