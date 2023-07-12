@@ -24,9 +24,11 @@
         <header>
             <div class="navbar">
                    <!-- Logo -->
-                   <a [routerLink]='["/home"]' >
-                    Building Your <span class="ms-3">Future</span>.
-                    </a>
+                   <ul class="logo">
+                    <li><a [routerLink]='["/home"]'>
+                     Building Your Future.
+                     </a></li>
+                   </ul>
                 <!-- Nav List -->
                 <ul class="nav_links">
                   <li *ngIf="isLogged"><a [routerLink]='["/courses"]'>Courses</a></li>
@@ -138,9 +140,9 @@
       <article (click)="apri($event)" class="faq">
           <div class="faq__icon"><i class="uil uil-plus"></i></div>
           <div class="question__answer">
-              <h4>Che scrivo?</h4>
+              <h4>Come posso prenotare una lezione con un docente?</h4>
               <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium quis qui similique quidem at voluptatem ex. Est dolorum minima dolor aut ut, accusantium vitae architecto aliquid nostrum numquam quibusdam.
+                Una volta effettuato l'accesso come studente, puoi esplorare i profili dei docenti e visualizzare i loro orari di disponibilità. Seleziona la data e l'orario desiderati e procedi con la prenotazione. Riceverai una conferma della prenotazione via email e sarai pronto per iniziare la tua lezione.              
               </p>
           </div>
       </article>
@@ -149,9 +151,9 @@
       <article (click)="apri($event)" class="faq">
         <div class="faq__icon"><i class="uil uil-plus"></i></div>
         <div class="question__answer">
-            <h4>How do I know the right courses for me?</h4>
+            <h4>Come posso comunicare con il mio docente?</h4>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium quis qui similique quidem at voluptatem ex. Est dolorum minima dolor aut ut, accusantium vitae architecto aliquid nostrum numquam quibusdam.
+              La piattaforma offre un sistema di messaggistica interno che ti consente di comunicare direttamente con il tuo docente. Potrai inviare domande, richieste di spiegazioni o chiarimenti, e il docente risponderà nel minor tempo possibile.
             </p>
         </div>
     </article>
@@ -160,9 +162,9 @@
     <article (click)="apri($event)" class="faq">
       <div class="faq__icon"><i class="uil uil-plus"></i></div>
       <div class="question__answer">
-          <h4>How do I know the right courses for me?</h4>
+          <h4>Come posso fornire un feedback sulla qualità delle lezioni?</h4>
           <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium quis qui similique quidem at voluptatem ex. Est dolorum minima dolor aut ut, accusantium vitae architecto aliquid nostrum numquam quibusdam.
+            Apprezziamo molto il tuo feedback! La piattaforma ti offre la possibilità di valutare e lasciare un commento sulle lezioni e sui docenti. Potrai esprimere la tua opinione e fornire suggerimenti per migliorare ulteriormente la qualità dell'esperienza di apprendimento sulla piattaforma.
           </p>
       </div>
   </article>
@@ -171,9 +173,9 @@
   <article (click)="apri($event)" class="faq">
     <div class="faq__icon"><i class="uil uil-plus"></i></div>
     <div class="question__answer">
-        <h4>How do I know the right courses for me?</h4>
+        <h4>Quali sono i requisiti per accedere alla piattaforma come studente?</h4>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium quis qui similique quidem at voluptatem ex. Est dolorum minima dolor aut ut, accusantium vitae architecto aliquid nostrum numquam quibusdam.
+          Per accedere come studente alla piattaforma, devi essere iscritto a una scuola e possedere un account studente. Sarà necessario fornire le informazioni richieste durante la registrazione e accettare i termini e le condizioni d'uso.
         </p>
     </div>
 </article>
@@ -182,10 +184,9 @@
   <article (click)="apri($event)" class="faq">
     <div class="faq__icon"><i class="uil uil-plus"></i></div>
     <div class="question__answer">
-        <h4>How do I know the right courses for me?</h4>
+        <h4>Quali materie sono coperte dalla piattaforma?</h4>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium quis qui similique quidem at voluptatem ex. Est dolorum minima dolor aut ut, accusantium vitae architecto aliquid nostrum numquam quibusdam.
-        </p>
+          La nostra piattaforma copre un'ampia gamma di materie, tra cui matematica, scienze, storia, lingue straniere e molte altre. Sarà possibile trovare docenti competenti in ogni campo, pronti ad aiutarti ad approfondire o recuperare gli argomenti trattati a scuola.        </p>
     </div>
 </article>
 <!--FINE Container 1-->
@@ -193,9 +194,9 @@
   <article (click)="apri($event)" class="faq">
     <div class="faq__icon"><i class="uil uil-plus"></i></div>
     <div class="question__answer">
-        <h4>How do I know the right courses for me?</h4>
+        <h4>Quali risorse supplementari sono disponibili sulla piattaforma?</h4>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium quis qui similique quidem at voluptatem ex. Est dolorum minima dolor aut ut, accusantium vitae architecto aliquid nostrum numquam quibusdam.
+          Oltre alle lezioni fornite dai docenti, la piattaforma offre una vasta gamma di risorse supplementari. Potrai accedere a materiale didattico, come dispense, presentazioni, esercizi e quiz interattivi, per consolidare la tua comprensione degli argomenti trattati.
         </p>
     </div>
 </article>

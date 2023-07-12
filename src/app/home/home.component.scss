@@ -131,8 +131,8 @@
   height: 32rem;
   margin-left: 4rem;
   margin-right: 4rem;
-  margin-top: 6rem;
-  margin-bottom: 4rem;
+  padding-top: 6rem;
+  margin-bottom: 6rem;
 }
 
 .categories h1 {
@@ -171,7 +171,6 @@
   background: #7A86FE;
   padding: 2rem;
   border-radius: 9px;
-  transition: var(--transition);
   color: #FFFFFF;
   font-weight: 400;
 }
@@ -293,7 +292,6 @@
 /* ============================ DOMANDE FREQUENTI ============================ */
 .faqs {
 margin-top: 6rem;
-margin-bottom: 6rem;
 margin-left: 4rem;
 margin-right: 4rem;
 }
@@ -350,8 +348,13 @@ box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
 .faq p {
   margin-top: 0.8rem;
   display: none;
+  color: #FFFFFF;
+  font-weight: 400;
 }
 
+.faq p:hover  {
+  font-weight: 600;
+}
 
 .open p {
   display: block;
@@ -374,7 +377,9 @@ box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 5rem;
-  margin-bottom: 6rem;
+  margin-left: 2rem;
+  margin-bottom: 7rem;
+  margin-top: 3rem;
 }
 
 .container_6 h1 {

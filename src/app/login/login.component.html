@@ -11,8 +11,11 @@
         <header>
             <div class="navbar">
                    <!-- Logo -->
-                   <a [routerLink]='["/home"]' class="logo">Building Your <span>Future</span>.
-                    </a>
+                   <ul class="logo">
+                    <li><a [routerLink]='["/home"]'>
+                     Building Your Future.
+                     </a></li>
+                   </ul>
                 <!-- Nav List -->
                 <ul class="nav_links">
                     <li *ngIf="isLogged"><a [routerLink]='["/courses"]'>Courses</a></li>

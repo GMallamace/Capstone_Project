@@ -55,9 +55,6 @@
   font-weight: 700;
 }
 
-.logo span{
-  color:#FFD754;
-}
 
  .nav_links{
     font-size: 20px;
@@ -212,13 +209,9 @@
     font-size: 0.85rem;
   }
   
-
-
 /* ============================ FINE SEZIONE 2 ABOUT ============================ */
 
-
-
-/* ============================ SEZIONE 4  ============================ */
+/* ============================ INIZIO SEZIONE 3  ============================ */
 .step {
     background: #1d225d;
     height: 32rem;
@@ -259,196 +252,59 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-
-
-
-
-  
- 
-  
 /* ============================ FINE SEZIONE 3 ============================ */
 
 
-/* ============================ INIZIO SEZIONE 5 FORM ============================ */
+
+/* ============================ INIZIO SEZIONE 4  ============================ */
+.container_dati{
+ margin-left: 15rem ;
+ margin-right: 15rem ;
+ padding: 5rem;
+ display: flex;
+ justify-content: space-between;
+}
+
+.singolo_dato{
+  text-align: center;
+  background-color:#1d225d;
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(122, 133, 254, 0.6);
+}
 
 
-#bottone1 {
-    padding-left: 33px;
-    padding-right: 33px;
-    padding-bottom: 16px;
-    padding-top: 16px;
-    border-radius: 9px;
-    background: #1d225d;
-    border: none;
-    color: white;
-    text-align: center;
-    position: flex;
-    cursor: pointer;
-    font-size: 1.3rem;
-    transition: 0.4s;
-  }
-  
-  
-  #bottone1 i {
-    font-size: 1.8rem;
-    color: #7A86FE;
-    padding-right: 1.5rem;
-  }
-  
-  #bottone1:hover {
-    box-shadow: 7px 5px 56px -14px #1d225d;
-    font-weight: 600;
-  }
-   
-   #bottone1:active {
-    transform: scale(0.97);
-    box-shadow: 7px 5px 56px -10px #1d225d;
-  }
+.singolo_dato h1{
+  color: #7A86FE;
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.singolo_dato h1:hover{
+  color: #FFD754;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+
+.singolo_dato p{
+  color: #FFFFFF;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+
+/* ============================ FINE SEZIONE 4  ============================ */
 
 
 
+/* ============================ INIZIO SEZIONE 5  ============================ */
 
-  .form_container {
-    height: 30rem;
-    width: 80rem;
-    background: #fff;
-    border-radius: 12px;
-    margin-bottom: 5rem;
-    margin-top: 5rem;
-    margin-left: 10rem;
-    box-shadow: 0px 2px 4px rgba(122, 134, 254, 0.5); /* Valori di esempio per l'ombra, puoi regolare i valori secondo le tue preferenze */
+.container5 {
+  padding: 5rem;
+  display: flex;
+}
 
-  }
-  .form_container .content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 25px 20px;
-  }
-  .content .image-box {
-    max-width: 55%;
-  }
-  .content .image-box img {
-    width: 100%;
-  }
-  .content .topic {
-    font-size: 22px;
-    font-weight: 700;
-    color: #1d225d;
-  }
-  .content form {
-    width: 40%;
-    margin-right: 30px;
-  }
-  .content .input-box {
-    height: 50px;
-    width: 100%;
-    margin: 16px 0;
-    position: relative;
-  }
-  .content .input-box input {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    border-radius: 6px;
-    font-size: 16px;
-    outline: none;
-    padding: 0 16px;
-    background: #7A86FE;
-    border: 2px solid transparent;
-    transition: all 0.3s ease;
-  }
-  .content .input-box input:focus,
-  .content .input-box input:valid {
-    border-color: #7A86FE;
-    background-color: #fff;
-  }
-  .content .input-box label {
-    position: absolute;
-    left: 18px;
-    top: 50%;
-    color: #ffffff;
-    font-size: 15px;
-    pointer-events: none;
-    transform: translateY(-50%);
-    transition: all 0.3s ease;
-  }
-  .content .input-box input:focus ~ label,
-  .content .input-box input:valid ~ label {
-    top: 0;
-    left: 12px;
-    display: 14px;
-    color: #7A86FE;
-    background: #fff;
-  }
-  .content .message-box {
-    min-height: 100px;
-    position: relative;
-  }
-  .content .message-box textarea {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    resize: none;
-    background: #7A86FE;
-    border: 2px solid transparent;
-    border-radius: 6px;
-    outline: none;
-    padding: 5px 16px;
-    transition: all 0.3s ease;
-  }
-  .content .message-box textarea:focus {
-    border-color: #7A86FE;
-    background-color: #fff;
-  }
-  .content .message-box label {
-    position: absolute;
-    font-size: 16px;
-    color: #ffffff;
-    left: 18px;
-    top: 6px;
-    pointer-events: none;
-    transition: all 0.3s ease;
-  }
-  .content .message-box textarea:focus ~ label {
-    left: 12px;
-    top: -10px;
-    color: #7A86FE;
-    font-size: 14px;
-    background: white;
-  }
-  .content .input-box input[type="submit"] {
-    color: #fff;
-    background: #7A86FE;
-    padding-left: 0;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
-  }
-  .content .input-box input[type="submit"]:hover {
-    background-color: #7A86FE;
-  }
-  @media (max-width: 1000px) {
-    .content .image-box {
-      max-width: 70%;
-    }
-    .content {
-      padding: 10px 0;
-    }
-  }
-  @media (max-width: 900px) {
-    .content .image-box {
-      display: none;
-    }
-    .content form {
-      width: 100%;
-      margin-left: 30px;
-    }
-  }
-
-/* ============================ FINE SEZIONE 5 FORM ============================ */
 
 
 /* ============================ FOOTER ============================ */

@@ -1,19 +1,144 @@
+<!--==========================NAVBAR==========================-->
 <header>
-    <div class="navbar">
-           <!-- Logo -->
-           <a [routerLink]='["/home"]' >
-            Building Your <span class="ms-3">Future</span>.
-            </a>
-        <!-- Nav List -->
-        <ul class="nav_links">
-          <li *ngIf="isLogged"><a [routerLink]='["/courses"]'>Courses</a></li>
-          <li><a [routerLink]='["/tutorial"]'>Tutorial</a></li>
-          <li><a [routerLink]='["/about"]'>About</a></li>
-          <li><a [routerLink]='["/teachers"]'>Contact Us</a></li>
-        </ul>
-        <ul class="nav_login">
-          <li><a [routerLink]='["/login"]'>Login</a></li>
-          <li><a [routerLink]='["/register"]'>Register</a></li>
-        </ul>
+  <div class="navbar">
+         <ul class="logo">
+          <li><a [routerLink]='["/home"]'>
+           Building Your Future.
+           </a></li>
+         </ul>
+      <ul class="nav_links">
+        <li *ngIf="isLogged"><a [routerLink]='["/courses"]'>Courses</a></li>
+        <li><a [routerLink]='["/tutorial"]'>Tutorial</a></li>
+        <li><a [routerLink]='["/about"]'>About</a></li>
+        <li><a [routerLink]='["/teachers"]'>Contact Us</a></li>
+      </ul>
+      <ul class="nav_login">
+        <li><a [routerLink]='["/login"]'>Login</a></li>
+        <li><a [routerLink]='["/register"]'>Register</a></li>
+      </ul>
+  </div>
+</header> 
+
+<!--==========================NAVBAR==========================-->
+
+<!--==========================CAROSELLO CONTAINER==========================-->
+
+<!--DOCENTE-->
+<div *ngIf="isTeacher">
+  <div class="login_section">
+    <div class="form-container">
+        <p class="title">Hai qualche dubbio? Contattaci subito!</p>
+        <form>
+
+          <div class="input-group">
+            <label for="username">Link del Video</label>
+            <input type="text" [(ngModel)]="lezione.link" name="username" id="username" placeholder="" required>
+        </div>
+
+            <div class="input-group">
+                <label for="username">Titolo argomento</label>
+                <input type="text" [(ngModel)]="lezione.titolo" name="titolo" id="titolo" placeholder="" required>
+            </div>
+
+            <div class="input-group">
+              <label for="username">Materia</label>
+              <input type="text" [(ngModel)]="lezione.materia" name="materia" id="materia" placeholder="" required>
+          </div>
+
+            <div class="input-group">
+                <label for="textarea">Descrizione dell'argomento</label>
+                <textarea [(ngModel)]="lezione.descrizione" name="descrizione"></textarea>
+            </div>
+
+            <button class="sign">Pubblica materiale</button>
+        </form>
     </div>
-</header>
+</div>
+
+</div>
+
+
+<!--ALUNNO-->
+<div *ngIf="!isTeacher">
+
+<div class="carousel"> 
+  <!--Singola Card del carosello 1-->
+  <div class="card_carousel">
+    <div class="card">
+      <iframe  src="https://www.youtube.com/embed/U5ffFIx1S5E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="testo_card">
+          <h2>Argomento lezione</h2>
+          <h3>Materia</h3>
+          <p>Breve introduzione relativa al video Breve introduzione relativa al video Breve introduzione relativa al video Breve introduzione relativa al video Breve introduzione relativa al video</p>
+      </div>
+    </div>
+  </div>
+  <!--FINE Card del carosello-->
+
+   <!--Singola Card del carosello 2-->
+   <div class="card_carousel">
+    <div class="card">
+      <iframe  src="https://www.youtube.com/embed/U5ffFIx1S5E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="testo_card">
+          <h2>Argomento lezione</h2>
+          <h3>Materia</h3>
+          <p>Breve introduzione relativa al video Breve introduzione relativa al video Breve introduzione relativa al video Breve introduzione relativa al video Breve introduzione relativa al video</p>
+      </div>
+    </div>
+  </div>
+  <!--FINE Card del carosello-->
+
+   <!--Singola Card del carosello 3-->
+   <div class="card_carousel">
+    <div class="card">
+      <iframe  src="https://www.youtube.com/embed/U5ffFIx1S5E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="testo_card">
+          <h2>Argomento lezione</h2>
+          <h3>Materia</h3>
+          <p>Breve introduzione relativa al video Breve introduzione relativa al video Breve introduzione relativa al video Breve introduzione relativa al video Breve introduzione relativa al video</p>
+      </div>
+    </div>
+  </div>
+  <!--FINE Card del carosello-->
+
+   <!--Singola Card del carosello 4-->
+   <div class="card_carousel">
+    <div class="card">
+      <iframe  src="https://www.youtube.com/embed/U5ffFIx1S5E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="testo_card">
+          <h2>Argomento lezione</h2>
+          <h3>Materia</h3>
+          <p>Breve introduzione relativa al video Breve introduzione relativa al video Breve introduzione relativa al video Breve introduzione relativa al video Breve introduzione relativa al video</p>
+      </div>
+    </div>
+  </div>
+  <!--FINE Card del carosello-->
+
+
+   <!--Singola Card del carosello 5-->
+   <div class="card_carousel">
+    <div class="card">
+      <iframe  src="https://www.youtube.com/embed/U5ffFIx1S5E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="testo_card">
+          <h2>Argomento lezione</h2>
+          <h3>Materia</h3>
+          <p>Breve introduzione relativa al video Breve introduzione relativa al video Breve introduzione relativa al video Breve introduzione relativa al video Breve introduzione relativa al video</p>
+      </div>
+    </div>
+  </div>
+  <!--FINE Card del carosello-->
+
+
+   <!--Singola Card del carosello 6-->
+   <div class="card_carousel">
+    <div class="card">
+      <iframe  src="https://www.youtube.com/embed/U5ffFIx1S5E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="testo_card">
+          <h2>Argomento lezione</h2>
+          <h3>Materia</h3>
+          <p>Breve introduzione relativa al video Breve introduzione relativa al video Breve introduzione relativa al video Breve introduzione relativa al video Breve introduzione relativa al video</p>
+      </div>
+    </div>
+  </div>
+  <!--FINE Card del carosello-->
+</div>

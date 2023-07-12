@@ -7,9 +7,11 @@
   <header>
     <div class="navbar">
            <!-- Logo -->
-           <a [routerLink]='["/home"]'>
-            Building Your <span> Future</span>.
-            </a>
+           <ul class="logo">
+           <li><a [routerLink]='["/home"]'>
+            Building Your Future.
+            </a></li>
+          </ul>
         <!-- Nav List -->
         <ul class="nav_links">
           <li *ngIf="isLogged"><a [routerLink]='["/courses"]'>Courses</a></li>
@@ -25,6 +27,7 @@
 </header>
 <!-- =========================FINE NAVBAR =========================-->
 
+<!-- =========================INIZIO PARTE 1 =========================-->
 <!-- Home Section Start -->
 <section class="home container" id="home">
     <div class="home-text">
@@ -100,55 +103,40 @@
 <!-- ==================== FINE PARTE 2 ====================-->
 
 <!-- ==================== INIZIO PARTE 3 ====================-->
-
-
-<!-- ==================== FINE PARTE 3 ====================-->
-
-
-
-<!-- ==================== INIZIO PARTE 4 ====================-->
 <section class="step">
   <section class="step_container">
     <div class="step_left">
       <h1>Pronto a cominciare?<br>Ecco gli <span>Step</span> grazie ai quali arriveremo <span>insieme</span> ad un <span>soddisfacente</span> risultato finale!</h1>
     </div>
-
-   
   </section>
 </section>
+<!-- ==================== FINE PARTE 3 ====================-->
 
+<!-- ==================== INIZIO PARTE 4 ====================-->
+<div class="container_dati">
+  <div class="singolo_dato">
+    <h1 id="numero">+270</h1>
+    <p>Corsi</p>
+  </div>
 
+  <div class="singolo_dato">
+    <h1 id="numero">+300</h1>
+    <p>Tutor</p>
+  </div>
 
+  <div class="singolo_dato">
+    <h1 id="numero">+700</h1>
+    <p>Tutorial</p>
+  </div>
+</div>
+<!-- ==================== FINE PARTE 4 ====================-->
 
-<!-- ========================= INIZIO FORM PARTE 5 =========================-->
+<!-- ==================== INIZIO PARTE 5 ====================-->
+<div class="container5">
 
-    <div class="form_container">
-      <div class="content">
-        <div class="image-box">
-          <img src="assets/img/sfondo.jpg" alt="" />
-        </div>
-        <form action="#">
-          <div class="topic">Hai qualche dubbio? Contattaci subito!</div>
-          <div class="input-box">
-            <input type="text" required />
-            <label>Inserisci il tuo nome</label>
-          </div>
-          <div class="input-box">
-            <input type="text" required />
-            <label>Inserisci la tua E-mail</label>
-          </div>
-          <div class="message-box">
-            <textarea></textarea>
-            <label>Lascia un messaggio</label>
-          </div>
-          <div class="input-box">
-            <button id="bottone1">Invia Messaggio</button>
-          </div>
-        </form>
-      </div>
-    </div>
+</div>
+<!-- ==================== FINE PARTE 5 ====================-->
 
-  <!-- ========================= FINE FORM PARTE 3 =========================-->
 
 
     <!-- ========================= FOOTER =========================-->

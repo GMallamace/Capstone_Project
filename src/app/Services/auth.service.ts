@@ -15,6 +15,7 @@ import { IAccessData } from '../Interface/iaccess-data';
 import { IRegisterData } from '../Interface/iregister-data';
 import { ILoginData } from '../Interface/ilogin-data';
 import { IUser } from '../Interface/iuser';
+import { Lezioni } from '../Interface/lezioni';
 
 @Injectable({
   providedIn: 'root',
@@ -25,10 +26,13 @@ export class AuthService {
   apiUrl: string = 'http://localhost:3000';
   loginUrl: string = this.apiUrl + '/login';
   registerUrl: string = this.apiUrl + '/register';
+  LezioniUrl: string = this.apiUrl + '/courses';
+
 
   private subj = new BehaviorSubject<IAccessData | null>(null);
   user$ = this.subj.asObservable();
-  isLogged$ = this.user$.pipe(map((v) => !!v)); //si, il doppio esclamativo fa piÃ¹ figo :)
+  isLogged$ = this.user$.pipe(map((v) => !!v)); //si, il doppio esclamativo fa più figo :)
+  isTeacher$ = this.user$.pipe(map((v) => v?.user.isTeacher));
 
   constructor(private http: HttpClient, private router: Router) {
     this.getUserData();
@@ -53,6 +57,10 @@ export class AuthService {
         ? this.subj.next(null)
         : this.subj.next(user)
       : this.subj.next(null);
+  }
+
+  lezione(data:Lezioni): Observable<Lezioni> {
+    return this.http.post<Lezioni>(this.LezioniUrl, data);
   }
 
   register(data: IRegisterData): Observable<IAccessData> {
