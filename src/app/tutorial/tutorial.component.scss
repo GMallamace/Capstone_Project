@@ -104,15 +104,30 @@
   background-color: #5CDE5A;
 }
 
+.info_carousel {
+  display: flex;
+  padding-top: 10rem;
+  flex-direction: column;
+}
+
+.info_carousel h1{
+  color: #7A86FE;
+  font-size: 2.5rem;
+  padding-left: 4rem;
+  margin-bottom: 2rem;
+}
+
+.info_carousel h1:hover{
+  color:#FFD754
+}
+
 
 .carousel{
   padding-left: 3rem;
-  padding-bottom: 6rem;
-  padding-top: 10rem;
+  padding-bottom: 3rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 3rem;
-
 }
 
 
@@ -244,5 +259,186 @@ font-weight: 400;
 
 
 
+/*=================================RESPONSIVE TABLET=================================*/
+/*=================================RESPONSIVE TABLET=================================*/
+/*=================================RESPONSIVE TABLET=================================*/
 
+@media screen and (max-width: 768px) {
+  .navbar{
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  
+  .logo {
+    font-size: 18px;
+    padding-left: 28px;
+  }
+  
+   .nav_links{
+      display: none;
+  }
+  .nav_login{
+    font-size: 18px;
+    display: flex;
+    gap:2rem;
+    align-items:flex-end;
+    padding-right: 50px;
+  }
+
+  .uil{
+    font-size: 4rem;
+    text-align: center;
+    margin: 0;
+    background-color: #5CDE5A;
+  }
+  
+  .info_carousel {
+    display: flex;
+    padding-top: 5rem;
+    flex-direction: column;
+  }
+ 
+
+  .carousel{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  
+  .card_carousel{
+   display: grid;
+   gap:2rem;
+  }
+  
+  .card{
+  padding:1.5rem;
+  }
+  
+
+  .card iframe{
+  width:291px;
+  height:180px;
+  border-radius: 10px;
+  }
+  
+  
+  .testo_card{
+  padding: 0.7rem;
+  
+  }
+  
+  .testo_card h2{
+  font-size: 1.7rem;
+  padding-bottom: 1.5rem;
+  }
+  
+  .testo_card p{
+  font-size: 0.7rem;
+  }
+
+
+  .footer {
+    gap: 1rem;
+    border-top-right-radius: 110px;
+    padding: 3rem;
+  }
+  .footer-box {
+    display: flex;
+    flex-direction: column;
+    margin-left:2rem;
+  }
+  
+}
+
+
+/*=================================RESPONSIVE=================================*/
+/*=================================RESPONSIVE=================================*/
+/*=================================RESPONSIVE CELLULARE=================================*/
+
+@media screen and (max-width: 600px) {
+  .navbar{
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  
+  .logo {
+    font-size: 18px;
+    padding-left: 28px;
+  }
+  
+   .nav_links{
+      display: none;
+  }
+  .nav_login{
+    font-size: 18px;
+    display: flex;
+    gap:2rem;
+    align-items:flex-end;
+    padding-right: 50px;
+  }
+
+  .uil{
+    font-size: 4rem;
+    text-align: center;
+    margin: 0;
+    background-color: #5CDE5A;
+  }
+  
+  .info_carousel {
+    display: flex;
+    padding-top: 5rem;
+    flex-direction: column;
+    text-align: center;
+  }
+ 
+
+  .carousel{
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-bottom: 3rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+  }
+
+  .card{
+  padding:1.2rem;
+  }
+  
+  
+  .testo_card{
+  padding: 0.5rem;
+  
+  }
+  
+  .testo_card h2{
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  }
+  
+
+/* ==================================== FOOTER ====================================  */
+.footer {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  border-top-right-radius: 150px;
+}
+
+.footer-box {
+  margin-left: 1.2rem;
+}
+
+}
 
