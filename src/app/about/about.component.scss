@@ -392,4 +392,342 @@
   .copyright :hover {
     font-weight: 600;
   }
+  /*=================================RESPONSIVE TABLET=================================*/
+/*=================================RESPONSIVE TABLET=================================*/
+/*=================================RESPONSIVE TABLET=================================*/
+
+@media screen and (max-width: 768px) {
+  .navbar{
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   
+  
+  .logo {
+    font-size: 18px;
+    padding-left: 28px;
+  }
+  
+   .nav_links{
+      display: none;
+  }
+  .nav_login{
+    font-size: 18px;
+    display: flex;
+    gap:2rem;
+    align-items:flex-end;
+    padding-right: 50px;
+  }
+
+  .home {
+    border-bottom-left-radius: 100px;
+  }
+  .home-text h1 {
+    font-size: 3.5rem;
+    padding-left: 60px;
+  }
+
+  .home-img img {
+    width: 380px;
+  }
+  
+  .home-img {
+    position: absolute;
+    top: 21%;
+    left: 42%;
+    z-index: 998; 
+  }
+
+  /* ============================ INIZIO SEZIONE 2 categorie metodi ============================ */
+.categories {
+  height: auto;
+  margin-left: 4rem;
+  margin-right: 2rem;
+  margin-bottom: 4rem;
+  margin-top: 0.3rem;
+}
+
+.categories h1 {
+  font-size: 2.6rem;
+  margin-bottom: 2 rem;
+}
+
+.categories__container {
+  grid-template-columns: 100%
+}
+
+.categories__left {
+  margin-right: 4rem;
+}
+
+
+
+.categories__right {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.3rem;
+}
+
+
+.category {
+  padding: 2rem;
+  border-radius: 9px;
+
+}
+
+.category h5 {
+  margin: 2rem 0 1rem;
+  font-size: 1rem;
+}
+
+
+.category p {
+  font-size: 0.8rem;
+}
+
+
+/* ============================ INIZIO SEZIONE 3  ============================ */
+.step {
+  height: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.step h1 {
+  margin-left: 5rem;
+  font-size: 1.5rem;
+
+}
+
+
+.step_container {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.step_left {
+  margin-right: 4rem;
+  margin-top: 0rem; 
+}
+
+.step_right {
+  margin-top: 5rem; 
+  margin-right: 4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+/* ============================ FINE SEZIONE 3 ============================ */
+
+
+
+/* ============================ INIZIO SEZIONE 4  ============================ */
+.container_dati{
+margin-left: 2rem ;
+margin-right: 2rem ;
+margin-top: 1.5rem;
+margin-bottom: 1.5rem;
+padding: 3rem;
+display: flex;
+justify-content: space-between;
+}
+
+.singolo_dato{
+padding: 1.4rem;
+}
+
+.singolo_dato h1{
+font-size: 2.2rem;
+}
+
+.singolo_dato p{
+font-size: 1.3rem;
+}
+
+.container5 {
+  display: none;
+}
+
+
+
+/* ==================================== FOOTER ====================================  */
+.footer {
+  gap: 1rem;
+  border-top-right-radius: 110px;
+  padding: 3rem;
+}
+.footer-box {
+  display: flex;
+  flex-direction: column;
+  margin-left:2rem;
+}
+
+}
+
+
+
+
+
+  /*=================================RESPONSIVE=================================*/
+/*=================================RESPONSIVE=================================*/
+/*=================================RESPONSIVE=================================*/
+/*=================================RESPONSIVE CELLULARE=================================*/
+@media screen and (max-width: 600px) {
+
+  /* ============================ INIZIO DELLA NAVBAR ============================ */
+.navbar{
+  display: flex;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.logo {
+  font-size: 18px;
+  padding-left: 28px;
+}
+
+ .nav_links{
+    display: none;
+}
+.nav_login{
+  font-size: 18px;
+  display: flex;
+  gap:2rem;
+  align-items:flex-end;
+  padding-right: 50px;
+}
+
+.home {
+  border-bottom-left-radius: 100px;
+}
+.home-text h1 {
+  font-size: 3.5rem;
+  padding-left: 60px;
+}
+
+.home-img img {
+  display: none;
+}
+
+
+  /* ============================ INIZIO SEZIONE 2 categorie metodi ============================ */
+.categories {
+  height: auto;
+  margin-left: 4rem;
+  margin-right: 2rem;
+  padding-top:2rem;
+  margin-bottom: 5rem;
+}
+
+.categories h1 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+
+}
+
+.categories__container {
+  grid-template-columns: 100%
+}
+
+.categories__left {
+  margin-right: 4rem;
+}
+
+
+
+.categories__right {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.3rem;
+}
+
+
+.category {
+  background: #7A86FE;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 9px;
+
+}
+
+
+.category p {
+  font-size: 0.70rem;
+  text-align: center;
+}
+
+/* ============================ FINE SEZIONE 2 ============================ */
+
+/* ============================ INIZIO SEZIONE 3  ============================ */
+.step {
+  height: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.step h1 {
+  margin-left: 4rem;
+  font-size: 1.5rem;
+}
+
+
+.step_container {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.step_left {
+  margin-right: 4rem;
+}
+
+.step_right {
+  margin-top: 5rem; 
+  margin-right: 4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+/* ============================ FINE SEZIONE 3 ============================ */
+
+
+
+/* ============================ INIZIO SEZIONE 4  ============================ */
+.container_dati{
+margin-left: 1rem ;
+margin-right: 1rem ;
+margin-top: 1.2rem;
+margin-bottom: 1.2rem;
+padding: 1.7rem;
+display: flex;
+justify-content: space-between;
+}
+
+.singolo_dato{
+padding: 1.2rem;
+}
+
+.singolo_dato h1{
+font-size: 2.2rem;
+}
+
+.singolo_dato p{
+font-size: 1.3rem;
+}
+
+.container5 {
+  display: none;
+}
+
+/* ============================ FINE SEZIONE 4  ============================ */
+.footer {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  border-top-right-radius: 150px;
+}
+
+.footer-box {
+  margin-left: 1.2rem;
+}
+}

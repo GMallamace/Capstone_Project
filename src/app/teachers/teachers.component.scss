@@ -253,11 +253,153 @@ border: none;
     transform: scale(0.97);
     box-shadow: 7px 5px 56px -10px #1d225d;
 }
+/* =========================== FINE SEZIONE SCRIVI MESSAGGIO ============================ */
+
+/*=================================RESPONSIVE=================================*/
+/*=================================RESPONSIVE=================================*/
+/*=================================RESPONSIVE=================================*/
+/*=================================RESPONSIVE TABLET=================================*/
+@media screen and (max-width: 768px) {
+
+  .navbar{
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .logo {
+    font-size: 18px;
+    padding-left: 28px;
+  }
+  
+   .nav_links{
+      display: none;
+  }
+  .nav_login{
+    font-size: 18px;
+    display: flex;
+    gap:2rem;
+    align-items:flex-end;
+    padding-right: 60px;
+  }
+  
+  .login_container {
+    position: relative;
+    min-height: 100vh;
+    display: grid;
+    background-color:none;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
 
 
+.login_img img {
+  height: 100vh;
+  object-fit: cover;
+  display: block;
+  opacity: 70%;
+}
+
+.form-container {
+    position: absolute;
+    top: 22%;
+    left: 18%;
+    width: 450px;
+    height: 700px;
+    background-color: #7a85fea5;
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.581);
+    padding-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 4rem;
+}
+  
+.title {
+    color: #ffffff;
+}
+  
+  
+.input-group {
+    margin-top: 2rem;
+    font-size: 0.875rem;
+    line-height: 1rem;
+}
+  
+.input-group label {
+    display: block;
+    color: #1d225d;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+}
 
 
-/* =========================== FINE SEZIONE 4 ============================ */
+/*=================================RESPONSIVE=================================*/
+/*=================================RESPONSIVE=================================*/
+/*=================================RESPONSIVE=================================*/
+/*=================================RESPONSIVE CELLULARE=================================*/
+@media screen and (max-width: 600px) {
+  .navbar{
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .logo {
+    font-size: 18px;
+    padding-left: 28px;
+  }
+  
+   .nav_links{
+      display: none;
+  }
+  .nav_login{
+    font-size: 18px;
+    display: flex;
+    gap:2rem;
+    align-items:flex-end;
+    padding-right: 50px;
+  }
+  
+.login_img img {
+  height: 100vh;
+  width: auto;
+  display: block;
+  opacity: 70%;
+}
 
-
+.form-container {
+    position: absolute;
+    top: 22%;
+    left: 10%;
+    width: 450px;
+    height: 700px;
+    background-color: #7a85fea5;
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.581);
+    padding-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 4rem;
+}
+  
+.title {
+    color: #ffffff;
+}
+  
+  
+.input-group {
+    margin-top: 2rem;
+    font-size: 0.875rem;
+    line-height: 1rem;
+}
+  
+.input-group label {
+    display: block;
+    color: #1d225d;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+}
 

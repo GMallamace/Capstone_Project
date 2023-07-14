@@ -206,6 +206,7 @@
 
 .category h5 {
   margin: 2rem 0 1rem;
+  font-size: 0.8rem;
 }
 
 .category p {
@@ -360,13 +361,6 @@ box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
   display: block;
 }
 /* ============================ FINE DOMANDE FREQUENTI ============================ */
-
-
-/* ============================ FAI QUALCHE DOMANDA ============================ */
-
-
-
-/* ============================ FINE FAI QUALCHE DOMANDA ============================ */
 
 /* ==================================== INIZIO SEZIONE 6 SCARICA APP ====================================  */
 
@@ -615,3 +609,516 @@ color: #FFD754;
     animation: loader_5191 675ms ease-in-out 600ms infinite;
   }
 /*FINE DEL CARICAMENTO*/
+
+
+/*=================================RESPONSIVE TABLET=================================*/
+/*=================================RESPONSIVE TABLET=================================*/
+/*=================================RESPONSIVE TABLET=================================*/
+
+@media screen and (max-width: 768px) {
+  .navbar{
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  
+  .logo {
+    font-size: 18px;
+    padding-left: 28px;
+  }
+  
+   .nav_links{
+      display: none;
+  }
+  .nav_login{
+    font-size: 18px;
+    display: flex;
+    gap:2rem;
+    align-items:flex-end;
+    padding-right: 50px;
+  }
+
+  .home {
+    border-bottom-left-radius: 100px;
+  }
+  .home-text h1 {
+    font-size: 3.5rem;
+    padding-left: 60px;
+  }
+
+  .home-img img {
+    width: 380px;
+  }
+  
+  .home-img {
+    position: absolute;
+    top: 21%;
+    left: 42%;
+    z-index: 998; 
+  }
+
+  /* ============================ INIZIO SEZIONE 2 categorie metodi ============================ */
+.categories {
+  height: auto;
+  margin-left: 4rem;
+  margin-right: 2rem;
+  padding-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.categories h1 {
+  font-size: 2.6rem;
+  margin-bottom: 2rem;
+}
+
+.categories__container {
+  grid-template-columns: 100%
+}
+
+.categories__left {
+  margin-right: 4rem;
+}
+
+
+
+.categories__right {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.3rem;
+}
+
+
+.category {
+  padding: 2rem;
+  border-radius: 9px;
+
+}
+
+.category h5 {
+  margin: 2rem 0 1rem;
+  font-size: 1rem;
+}
+
+
+.category p {
+  font-size: 0.8rem;
+}
+
+
+
+/* ============================ FINE SEZIONE 2 ============================ */
+
+
+/* ============================ INIZIO SEZIONE 3, diventa docente ============================ */
+
+.container_3 {
+  height: 730px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 4rem;
+  padding-top: 3rem;
+
+
+}
+
+.container_3 h1 {
+  font-size: 2.5rem;
+}
+
+
+.container_3 p{
+  font-size: 20px;
+}
+
+
+.container_img img{
+  width: 400px;
+}
+
+
+#bottone1 {
+text-align: center;
+}
+
+
+
+
+/* ============================ FINE SEZIONE 3, diventa docente ============================ */
+
+
+/* ============================ DOMANDE FREQUENTI ============================ */
+.faqs {
+margin-top: 6rem;
+margin-left: 3rem;
+margin-right: 3rem;
+}
+
+.faqs h2 {
+ text-align: center;
+}
+
+
+.faqs__container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+}
+
+.faq {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  height: fit-content;
+  background: #7A86FE;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+
+.faq h4 {
+  font-size: 1rem;
+  line-height: 1.3;
+  font-weight: 500;
+  text-align: center;
+}
+
+.faq p {
+  margin-top: 0.7rem;
+  text-align: center;
+}
+
+
+/* ============================ FINE DOMANDE FREQUENTI ============================ */
+
+
+
+/* ==================================== INIZIO SEZIONE 6 SCARICA APP ====================================  */
+
+.container_6 {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  margin-bottom: 7rem;
+  margin-top: 5rem;
+}
+
+.container_6 h1 {
+  font-size: 2.2rem;
+}
+
+.container_6 p{
+  font-size: 17px;
+  padding-right: 4rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+
+.container_cell img {
+  width: 530px;
+}
+
+
+.container_text{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+
+.container_text button{
+  padding-bottom: 1rem;
+}
+
+
+#bottone1 {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 7px;
+  font-size: 1rem;
+}
+
+
+#bottone1 i {
+  font-size: 1.8rem;
+  color: #7A86FE;
+  padding-right: 1rem;
+}
+
+
+/* ==================================== FINE SEZIONE 6 SCARICA APP ====================================  */
+/* ==================================== INIZIO RETTANGOLI ====================================  */
+.rettangolo1{
+ display: none;
+}
+
+.rettangolo2{
+  display: none;
+}
+/* ==================================== FOOTER ====================================  */
+.footer {
+  gap: 1rem;
+  border-top-right-radius: 110px;
+  padding: 3rem;
+}
+.footer-box {
+  display: flex;
+  flex-direction: column;
+  margin-left:2rem;
+}
+
+}
+/*=================================RESPONSIVE=================================*/
+/*=================================RESPONSIVE=================================*/
+/*=================================RESPONSIVE=================================*/
+/*=================================RESPONSIVE CELLULARE=================================*/
+@media screen and (max-width: 600px) {
+  .navbar{
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .logo {
+    font-size: 18px;
+    padding-left: 28px;
+  }
+  
+   .nav_links{
+      display: none;
+  }
+  .nav_login{
+    font-size: 18px;
+    display: flex;
+    gap:2rem;
+    align-items:flex-end;
+    padding-right: 50px;
+  }
+
+  .home {
+    border-bottom-left-radius: 100px;
+  }
+  .home-text h1 {
+    font-size: 3.5rem;
+    padding-left: 60px;
+  }
+
+  /* ============================ INIZIO SEZIONE 2 categorie metodi ============================ */
+.categories {
+  height: auto;
+  margin-left: 4rem;
+  margin-right: 2rem;
+  padding-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.categories h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+
+}
+
+.categories__container {
+  grid-template-columns: 100%
+}
+
+.categories__left {
+  margin-right: 4rem;
+}
+
+
+
+.categories__right {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.3rem;
+}
+
+
+.category {
+  background: #7A86FE;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 9px;
+
+}
+
+
+.category p {
+  font-size: 0.70rem;
+  text-align: center;
+}
+
+/* ============================ FINE SEZIONE 2 ============================ */
+
+
+/* ============================ INIZIO SEZIONE 3, diventa docente ============================ */
+
+.container_3 {
+  height: 730px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+  padding: 2.5rem;
+
+}
+
+.container_3 h1 {
+  font-size: 2.5rem;
+  padding-left: 3rem;
+  text-align: center;
+}
+
+
+.container_3 p{
+  text-align: center;
+  font-size: 20px;
+}
+
+
+.container_img img{
+  width: 370px;
+}
+
+
+#bottone1 {
+text-align: center;
+}
+
+
+
+
+/* ============================ FINE SEZIONE 3, diventa docente ============================ */
+
+
+/* ============================ DOMANDE FREQUENTI ============================ */
+.faqs {
+margin-top: 6rem;
+margin-left: 4rem;
+margin-right: 4rem;
+}
+
+.faqs h2 {
+ text-align: center;
+}
+
+
+.faqs__container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+}
+
+.faq {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  height: fit-content;
+  background: #7A86FE;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+
+.faq h4 {
+  font-size: 0.7rem;
+  line-height: 1.3;
+  font-weight: 600;
+  text-align: center;
+}
+
+.faq p {
+  margin-top: 0.7rem;
+  text-align: center;
+}
+
+
+/* ============================ FINE DOMANDE FREQUENTI ============================ */
+
+
+
+/* ==================================== INIZIO SEZIONE 6 SCARICA APP ====================================  */
+
+.container_6 {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  margin-bottom: 7rem;
+  margin-top: 5rem;
+}
+
+.container_6 h1 {
+  font-size: 2.2rem;
+}
+
+.container_6 p{
+  font-size: 15px;
+  font-weight: 500;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+
+.container_cell img {
+  width: 530px;
+}
+
+
+.container_text{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+
+.container_text button{
+  padding-bottom: 1rem;
+}
+
+
+#bottone1 {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 7px;
+  font-size: 1rem;
+}
+
+
+#bottone1 i {
+  font-size: 1.8rem;
+  color: #7A86FE;
+  padding-right: 1.5rem;
+}
+
+
+/* ==================================== FINE SEZIONE 6 SCARICA APP ====================================  */
+/* ==================================== INIZIO RETTANGOLI ====================================  */
+.rettangolo1{
+ display: none;
+}
+
+.rettangolo2{
+  display: none;
+}
+/* ==================================== FOOTER ====================================  */
+.footer {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  border-top-right-radius: 150px;
+}
+
+.footer-box {
+  margin-left: 1.2rem;
+}
+
+}
+
+
