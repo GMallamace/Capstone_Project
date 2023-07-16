@@ -23,74 +23,67 @@
 
 <!--==========================CAROSELLO CONTAINER==========================-->
 
-<!--DOCENTE-->
-<!-- DOCENTE -->
-<!-- DOCENTE -->
+
 <!-- DOCENTE -->
 <div *ngIf="isTeacher">
-  <div class="teacher_section">
-  <div class="login_section">
-    <div class="form-container">
-      <p class="title">Caricamento del materiale didattico</p>
-      <form (submit)="pubblicaMateriale()">
-        <div class="input-group">
-          <label for="link">Link del Video</label>
-          <input type="text" [(ngModel)]="lezione.link" name="link" id="link" placeholder="" required>
-        </div>
+    <div class="login_section">
+      <div class="form-container">
+        <!-- Form per caricare le card -->
+        <p class="title">Caricamento del materiale didattico</p>
+        <form (submit)="pubblicaMateriale()">
+          <div class="input-group">
+            <label for="link">Link del Video</label>
+            <input type="text" [(ngModel)]="lezione.link" name="link" id="link" placeholder="" required>
+          </div>
 
-        <div class="input-group">
-          <label for="titolo">Titolo argomento</label>
-          <input type="text" [(ngModel)]="lezione.titolo" name="titolo" id="titolo" placeholder="" required>
-        </div>
+          <div class="input-group">
+            <label for="titolo">Titolo argomento</label>
+            <input type="text" [(ngModel)]="lezione.titolo" name="titolo" id="titolo" placeholder="" required>
+          </div>
 
-        <div class="input-group">
-          <label for="materia">Materia</label>
-          <input type="text" [(ngModel)]="lezione.materia" name="materia" id="materia" placeholder="" required>
-        </div>
+          <div class="input-group">
+            <label for="materia">Materia</label>
+            <input type="text" [(ngModel)]="lezione.materia" name="materia" id="materia" placeholder="" required>
+          </div>
 
-        <div class="input-group">
-          <label for="descrizione">Descrizione dell'argomento</label>
-          <textarea [(ngModel)]="lezione.descrizione" name="descrizione"></textarea>
-        </div>
+          <div class="input-group">
+            <label for="descrizione">Descrizione dell'argomento</label>
+            <textarea [(ngModel)]="lezione.descrizione" name="descrizione"></textarea>
+          </div>
 
-        <button type="submit" class="sign">Pubblica materiale</button>
-      </form>
+          <button type="submit" class="sign">Pubblica materiale</button>
+        </form>
+      </div>
     </div>
-  </div>
-
-  <div class="carousel">
-    <!-- Singola Card del carosello -->
-    <div class="card_carousel" *ngFor="let card of cards; let i = index">
-      <div class="card">
-        <iframe [src]="getVideoUrl(card.link)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <div class="testo_card">
-          <h2>{{ card.titolo }}</h2>
-          <h3>{{ card.materia }}</h3>
-          <p>{{ card.descrizione }}</p>
+  
+    <div class="carousel">
+      <!-- Visualizza le card caricate dai docenti -->
+      <div class="card" *ngFor="let card of cards; let i = index">
+        <div class="card-content">
+          <iframe [src]="getVideoUrl(card.link)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="card-text">
+            <h2>{{ card.titolo }}</h2>
+            <h3>{{ card.materia }}</h3>
+            <p>{{ card.descrizione }}</p>
+          </div>
+          <div class="card-actions">
+            <button class="sign2" (click)="modificaMateriale(i)">Modifica materiale</button>
+            <button class="sign2" (click)="eliminaMateriale(i)">Elimina materiale</button>
+          </div>
         </div>
-        <button class="sign2" (click)="modificaMateriale(i)">Modifica materiale</button>
-        <button class="sign2" (click)="eliminaMateriale(i)">Elimina materiale</button>
       </div>
     </div>
   </div>
-</div>
-</div>
-
-
-
-
-
-
 
 
 <!-- ALUNNO -->
 <div *ngIf="!isTeacher">
   <div class="carousel">
-    <!-- Singola Card del carosello -->
-    <div class="card_carousel" *ngFor="let card of cards; let i = index">
-      <div class="card">
-        <iframe [src]="card.link" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <div class="testo_card">
+    <!-- Visualizza le card caricate dagli studenti -->
+    <div class="card" *ngFor="let card of cards; let i = index">
+      <div class="card-content">
+        <iframe [src]="getVideoUrl(card.link)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="card-text">
           <h2>{{ card.titolo }}</h2>
           <h3>{{ card.materia }}</h3>
           <p>{{ card.descrizione }}</p>

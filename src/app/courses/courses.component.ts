@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../Services/auth.service';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { Lezioni } from '../Interface/lezioni';
 
 @Component({
@@ -7,7 +8,7 @@ import { Lezioni } from '../Interface/lezioni';
   templateUrl: './courses.component.html',
   styleUrls: ['./courses.component.scss']
 })
-export class CoursesComponent {
+export class CoursesComponent implements OnInit {
   isLogged: boolean = false;
   isTeacher: boolean | undefined = false;
   lezione: Lezioni = {
@@ -19,11 +20,12 @@ export class CoursesComponent {
   };
   cards: Lezioni[] = []; // Array per conservare le cards caricate
 
-  constructor(private svg: AuthService) {}
+  constructor(private svg: AuthService, private sanitizer: DomSanitizer) {}
 
   ngOnInit() {
     this.checkLog();
     this.svg.isTeacher$.subscribe((res) => (this.isTeacher = res));
+    this.caricaCarteSalvate(); // Carica le carte salvate dal localStorage
   }
 
   checkLog() {
@@ -36,6 +38,10 @@ export class CoursesComponent {
   pubblicaMateriale() {
     // Aggiungi la lezione all'array cards
     this.cards.push({ ...this.lezione });
+
+    // Salva le carte nel localStorage
+    this.salvaCarte();
+
     // Resetta il form
     this.lezione = {
       link: '',
@@ -54,9 +60,25 @@ export class CoursesComponent {
   eliminaMateriale(index: number) {
     // Rimuovi la card dall'array cards
     this.cards.splice(index, 1);
+
+    // Aggiorna il localStorage
+    this.salvaCarte();
   }
 
-  getVideoUrl(link: string) {
-    return link.replace("watch?v=", "embed/");
+  caricaCarteSalvate() {
+    const savedCards = localStorage.getItem('cards');
+    if (savedCards) {
+      this.cards = JSON.parse(savedCards);
+    }
+  }
+
+  salvaCarte() {
+    // Salva le carte nel localStorage
+    localStorage.setItem('cards', JSON.stringify(this.cards));
+  }
+
+  getVideoUrl(link: string): SafeResourceUrl {
+    const videoUrl = link.replace("watch?v=", "embed/");
+    return this.sanitizer.bypassSecurityTrustResourceUrl(videoUrl);
   }
 }
