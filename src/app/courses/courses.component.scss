@@ -91,8 +91,214 @@
 }  
 /* ============================ FINE DELLA NAVBAR ============================ */
 
+/* ============================ DOCENTE ============================ */
 
-/* ============================ CAROSELLO ============================ */
+
+.login_section {
+  grid-column: 4;
+  grid-row: 1;
+}
+
+
+.form-container {
+  position: absolute;
+  top: 22%;
+  left: 55%;
+  width: 550px;
+  height: 750px;
+  border-radius: 0.75rem;
+  background-color: #7A86FE;
+  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+  padding-top: 6rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  color: rgba(243, 244, 246, 1);
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 700;
+}
+
+.form {
+  margin-top: 1.5rem;
+}
+
+.input-group {
+  margin-top: 2rem;
+  font-size: 0.875rem;
+  line-height: 1rem;
+}
+
+.input-group label {
+  display: block;
+  color: rgb(246, 246, 246);
+  margin-bottom: 4px;
+}
+
+.input-group input, .input-group textarea {
+  width: 100%;
+  border-radius: 0.375rem;
+  outline: 0;
+  background-color: rgb(255, 255, 255);
+  padding: 0.75rem 1rem;
+  color: #1d225d;
+}
+
+.input-group textarea {
+height:8rem;
+border: none;
+}
+
+.input-group input:focus {
+  border-color: #7A86FE;
+  background-color: #FFD754;
+}
+
+.input-group textarea:focus {
+border-color: #7A86FE;
+background-color: #FFD754;
+}
+
+
+.sign {
+  display: block;
+  width: 100%;
+  background-color: #1d225d;
+  padding: 0.75rem;
+  text-align: center;
+  color: #FFFFFF;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.sign:hover {
+font-weight: 600;
+box-shadow: 7px 5px 56px -14px #1d225d;
+}
+
+
+.sign:active {
+  transform: scale(0.97);
+  box-shadow: 7px 5px 56px -10px #1d225d;
+}
+
+
+
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-group .sign2 {
+  flex-grow: 1;
+  margin-right: 15px;
+  margin-top: 2.5rem;
+}
+
+.sign2 {
+  display:block;
+  width: 100%;
+  background-color: #7A86FE;
+  padding: 0.75rem;
+  text-align: center;
+  color: #1d225d;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  line-height: 1.2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.sign2:hover {
+background-color: #FFD754;
+font-weight: 600;
+box-shadow: 7px 5px 56px -14px #1d225d;
+}
+
+
+.sign2:active {
+  transform: scale(0.97);
+  box-shadow: 7px 5px 56px -10px #1d225d;
+}
+
+.carousel{
+  grid-column: 2;
+  grid-row: 1;
+  padding-left: 6rem;
+  padding-top: 20rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}
+
+
+.card_carousel{
+ display: grid;
+ gap:2rem;
+}
+
+.card{
+padding:2rem;
+background-color: transparent;
+box-shadow: 0px 2px 4px rgba(122, 134, 254, 0.5); 
+border-radius: 10px;
+}
+
+.card:hover{
+box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+
+
+.card iframe{
+width:364px;
+height:225px;
+border-radius: 10px;
+
+}
+
+
+.testo_card{
+padding: 1.5rem;
+
+}
+
+.testo_card h2{
+font-size: 2rem;
+color: #7A86FE;
+font-weight: 600;
+}
+
+.testo_card h3{
+font-size: 1.5rem;
+color: #1d225d;
+font-weight: 600;
+padding-bottom: 1rem;
+}
+
+.testo_card p{
+color: #1d225d;
+font-weight: 400;
+}
+
+
+
+
+
+
+
+
+/* ============================ CAROSELLO ============================ 
 
 .carousel{
     padding-left: 6rem;
@@ -152,6 +358,5 @@
   font-weight: 400;
 }
 
-
-
+*/
 
