@@ -365,6 +365,82 @@ font-size: 0.9rem;
   
 }
 
+/*=================================RESPONSIVE=================================*/
+/*=================================RESPONSIVE=================================*/
+/*=================================RESPONSIVE=================================*/
+/*=================================RESPONSIVE TABLET=================================*/
+@media screen and (max-width: 768px) {
+  .navbar{
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .logo {
+    font-size: 18px;
+    padding-left: 28px;
+  }
+  
+   .nav_links{
+      display: none;
+  }
+  .nav_login{
+    font-size: 18px;
+    display: flex;
+    gap:2rem;
+    align-items:flex-end;
+    padding-right: 60px;
+  }
+
+  .info_carousel {
+    display: flex;
+    padding-top: 5rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+
+ /*=================================CAROSELLO=================================*/
+
+  .carousel{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-bottom: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .card{
+  padding:1rem;
+  }
+  
+  
+  .testo_card{
+  padding: 0.7rem;
+  
+  }
+  
+  .testo_card h2{
+  font-size: 1.5rem;
+  padding-bottom: 0.7rem;
+  }
+
+  /* ==================================== FOOTER ====================================  */
+.footer {
+  gap: 1rem;
+  border-top-right-radius: 110px;
+  padding: 3rem;
+}
+.footer-box {
+  display: flex;
+  flex-direction: column;
+  margin-left:2rem;
+}
+}
+
 
 /*=================================RESPONSIVE=================================*/
 /*=================================RESPONSIVE=================================*/
