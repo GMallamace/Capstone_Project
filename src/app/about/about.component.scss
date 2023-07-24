@@ -733,9 +733,7 @@ font-size: 1.3rem;
 }
 
 .text_newsletter {
-  text-align: center;
-  padding-top: 2rem;
-  color: #ffffff;
+  padding-top: 1.5rem;
 }
 
 .text_newsletter h1 {
@@ -743,73 +741,13 @@ font-size: 1.3rem;
 }
 
 .text_newsletter p {
-  font-size: 0.8rem;
-  padding-top: 1.5rem;
-}
-
-.form_newsletter {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.input-group {
-  display: flex;
-  flex-direction: column;
-  margin-right: 1rem;
-  position: relative; 
-}
-
-.input-group label.input-label {
-  position: absolute;
-  top: 50%;
-  left: 1rem;
-  transform: translateY(-50%);
-  color:#8b8b8bf3;
-  pointer-events: none; 
-  opacity: 0.7; 
-  transition: opacity 0.3s ease;
-}
-
-.input-group input {
-  border-radius: 0.375rem;
-  outline: 0;
-  background-color: rgb(255, 255, 255);
-  padding: 0.75rem 1rem;
-  color: #1d225d;
-}
-
-.input-group input:focus + label.input-label {
-  opacity: 0; /* Aggiunto */
-}
-
-.button_newsletter {
-  width: 7rem;
-  background-color: #FFD754;
-  padding: 0.75rem;
-  text-align: center;
-  color: #1d225d;
-  border: none;
-  font-size: 0.9rem;
-  border-radius: 0.375rem;
-  font-weight: 500;
-  line-height: 1.2rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-  
-.button_newsletter:hover {
-  font-weight: 600;
-  box-shadow: 7px 5px 56px -14px #1d225d;
+  font-size: 1rem;
+  padding-top: 1rem;
 }
 
 
-.button_newsletter:active {
-    transform: scale(0.97);
-    box-shadow: 7px 5px 56px -10px #1d225d;
-}
+
+
 
 
 /* ==================================== FOOTER ====================================  */
@@ -861,18 +799,36 @@ font-size: 1.3rem;
   padding-right: 50px;
 }
 
+/* ============================ INIZIO SEZIONE 1 ============================ */
+
 .home {
-  border-bottom-left-radius: 100px;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
 }
+
 .home-text h1 {
-  font-size: 3.5rem;
-  padding-left: 60px;
+  font-size: 2rem;
+  padding-right: 1rem;
+  padding-top: 4rem;
+  padding-left: 1rem;
+  text-align: center;
+
 }
+
 
 .home-img img {
-  display: none;
+  width: 370px;
 }
 
+.home-img {
+  position: relative;
+  text-align: center;
+  margin-top:6rem;
+  margin-left: 1rem;
+}
+/* ============================ FINE SEZIONE 1 ============================ */
 
   /* ============================ INIZIO SEZIONE 2 categorie metodi ============================ */
 .categories {
